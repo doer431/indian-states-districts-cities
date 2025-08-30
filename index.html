@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pincode Auto-fill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Location Selector</h2>
+        <div class="form-group">
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option value="">--Select State--</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="district">District:</label>
+            <select id="district" name="district" disabled>
+                <option value="">--Select District--</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <select id="city" name="city" disabled>
+                <option value="">--Select City--</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" placeholder="Enter Pincode" maxlength="6">
+        </div>
+    </div>
+    <script src="pincodeData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
